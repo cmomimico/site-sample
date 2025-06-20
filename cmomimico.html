@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMOMimico - Fractional CMO Services | SEO & Digital Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'synth-cyan': '#00ffff',
+                        'synth-magenta': '#ff00ff',
+                        'synth-purple': '#8000ff',
+                        'synth-dark': '#0a0a0a',
+                        'synth-darker': '#050505'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-synth-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-synth-darker border-b border-synth-cyan/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-synth-cyan text-xl font-bold">
+                        <i class="fas fa-rocket mr-2"></i>CMOMimico
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">About Me</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio</a>
+                    <a href="clients.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Clients</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Blog</a>
+                    <a href="resume.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Resume</a>
+                    <a href="cmomimico.html" class="text-synth-cyan px-3 py-2 rounded-md text-sm font-medium">CMOMimico</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-synth-cyan">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-synth-darker border-t border-synth-cyan/20">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">About Me</a>
+                <a href="portfolio.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+                <a href="clients.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Clients</a>
+                <a href="blog.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="resume.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Resume</a>
+                <a href="cmomimico.html" class="text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">CMOMimico</a>
+                <a href="contact.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2">
+                <li>
+                    <a href="index.html" class="text-gray-400 hover:text-synth-cyan transition-colors">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-chevron-right text-gray-600 mx-2"></i>
+                    <span class="text-synth-cyan">CMOMimico</span>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <span class="text-synth-cyan">CMO</span><span class="text-synth-magenta">Mimico</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-gray-300 mb-8">Fractional CMO Services for Growth-Focused Companies</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+                    Strategic marketing leadership without the full-time commitment. We help companies scale their digital presence and drive measurable results through expert SEO and technical marketing.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-gradient-to-r from-synth-cyan to-synth-magenta text-black font-bold py-3 px-8 rounded-lg hover:shadow-lg hover:shadow-synth-cyan/25 transition-all duration-300">
+                        <i class="fas fa-rocket mr-2"></i>Start Your Growth Journey
+                    </a>
+                    <a href="clients.html" class="border border-synth-cyan text-synth-cyan font-bold py-3 px-8 rounded-lg hover:bg-synth-cyan hover:text-black transition-all duration-300">
+                        <i class="fas fa-users mr-2"></i>See Our Results
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-20 left-10 w-2 h-2 bg-synth-cyan rounded-full animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-1 h-1 bg-synth-magenta rounded-full animate-ping"></div>
+            <div class="absolute bottom-20 left-1/4 w-3 h-3 bg-synth-purple rounded-full animate-bounce"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-synth-darker">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="text-synth-cyan">Comprehensive</span> 
+                <span class="text-synth-magenta">CMO Services</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">Strategic Planning</h3>
+                    <p class="text-gray-400 mb-4">
+                        Develop comprehensive marketing strategies aligned with business objectives and market opportunities.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Market analysis & positioning</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Competitive intelligence</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Growth roadmap development</li>
+                    </ul>
+                </div>
+
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">SEO & Technical Marketing</h3>
+                    <p class="text-gray-400 mb-4">
+                        Optimize your digital presence for search engines and technical performance excellence.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Technical SEO audits</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Content strategy optimization</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Performance monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">Digital Marketing Leadership</h3>
+                    <p class="text-gray-400 mb-4">
+                        Lead and optimize all digital marketing channels for maximum ROI and growth.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Multi-channel strategy</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Team leadership & training</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>ROI optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-analytics"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">Analytics & Optimization</h3>
+                    <p class="text-gray-400 mb-4">
+                        Data-driven decision making with comprehensive analytics and continuous optimization.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>KPI development & tracking</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>A/B testing strategies</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Performance reporting</li>
+                    </ul>
+                </div>
+
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">Team Development</h3>
+                    <p class="text-gray-400 mb-4">
+                        Build and mentor high-performing marketing teams with modern best practices.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Team structure optimization</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Process improvement</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Skill development</li>
+                    </ul>
+                </div>
+
+                <div class="bg-synth-dark p-8 rounded-lg border border-synth-cyan/20 hover:border-synth-cyan/40 transition-all duration-300">
+                    <div class="text-synth-cyan text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-synth-magenta">Stakeholder Management</h3>
+                    <p class="text-gray-400 mb-4">
+                        Bridge the gap between marketing and business objectives with clear communication.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Executive reporting</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Cross-functional collaboration</li>
+                        <li><i class="fas fa-check text-synth-cyan mr-2"></i>Budget management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose CMOMimico -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Why Choose <span class="text-synth-cyan">CMOMimico</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-synth-cyan to-synth-magenta rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-synth-magenta">Flexible Engagement</h3>
+                                <p class="text-gray-400">
+                                    Scale up or down based on your needs. No long-term commitments, just results-driven partnerships.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-synth-cyan to-synth-magenta rounded-lg flex items-center justify-center">
+                                <i class="fas fa-trophy text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-synth-magenta">Proven Track Record</h3>
+                                <p class="text-gray-400">
+                                    Successfully scaled multiple companies from startup to enterprise with measurable ROI improvements.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-synth-cyan to-synth-magenta rounded-lg flex items-center justify-center">
+                                <i class="fas fa-cogs text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-synth-magenta">Technical Expertise</h3>
+                                <p class="text-gray-400">
+                                    Deep understanding of SEO, analytics, and technical marketing that drives sustainable growth.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-synth-cyan to-synth-magenta rounded-lg flex items-center justify-center">
+                                <i class="fas fa-chart-bar text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-synth-magenta">Data-Driven Approach</h3>
+                                <p class="text-gray-400">
+                                    Every decision backed by data and analytics to ensure maximum impact and ROI.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-synth-darker p-8 rounded-lg border border-synth-cyan/20">
+                    <h3 class="text-2xl font-bold mb-6 text-synth-cyan">Our Impact</h3>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Average Revenue Growth</span>
+                            <span class="text-synth-magenta font-bold text-2xl">247%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-synth-cyan to-synth-magenta h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">SEO Traffic Increase</span>
+                            <span class="text-synth-magenta font-bold text-2xl">312%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-synth-cyan to-synth-magenta h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Conversion Rate Lift</span>
+                            <span class="text-synth-magenta font-bold text-2xl">156%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-synth-cyan to-synth-magenta h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Client Satisfaction</span>
+                            <span class="text-synth-magenta font-bold text-2xl">98%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-synth-cyan to-synth-magenta h-2 rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-synth-cyan/10 to-synth-magenta/10">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-6">
+                Ready to <span class="text-synth-cyan">Scale</span> Your <span class="text-synth-magenta">Business</span>?
+            </h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Let's discuss how CMOMimico can help you achieve your growth goals with strategic marketing leadership.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-gradient-to-r from-synth-cyan to-synth-magenta text-black font-bold py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-synth-cyan/25 transition-all duration-300">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Consultation
+                </a>
+                <a href="clients.html" class="border border-synth-cyan text-synth-cyan font-bold py-4 px-8 rounded-lg hover:bg-synth-cyan hover:text-black transition-all duration-300">
+                    <i class="fas fa-eye mr-2"></i>View Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-synth-darker border-t border-synth-cyan/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-synth-cyan text-lg font-bold mb-4">
+                        <i class="fas fa-rocket mr-2"></i>CMOMimico
+                    </h3>
+                    <p class="text-gray-400 mb-4">
+                        Strategic marketing leadership for growth-focused companies. Expert SEO and technical digital marketing solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-synth-cyan transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-synth-cyan transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-synth-cyan transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-synth-magenta font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">Fractional CMO</a></li>
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">SEO Strategy</a></li>
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">Technical Marketing</a></li>
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">Analytics & Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-synth-magenta font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-synth-cyan transition-colors">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-synth-cyan transition-colors">Portfolio</a></li>
+                        <li><a href="clients.html" class="hover:text-synth-cyan transition-colors">Clients</a></li>
+                        <li><a href="blog.html" class="hover:text-synth-cyan transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-synth-magenta font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-synth-cyan transition-colors">Get in Touch</a></li>
+                        <li><a href="resume.html" class="hover:text-synth-cyan transition-colors">Resume</a></li>
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-synth-cyan transition-colors">Schedule Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-synth-cyan/20 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 CMOMimico. All rights reserved. Strategic marketing leadership for the digital age.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
