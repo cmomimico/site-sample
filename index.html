@@ -109,8 +109,19 @@
     </script>
 </head>
 <body class="bg-synth-dark text-white min-h-screen">
+    <!-- Sticky Contact Button -->
+    <div class="bg-synth-cyan/10 border-b border-synth-cyan/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+            <div class="flex justify-end">
+                <a href="contact.html" class="bg-gradient-to-r from-synth-cyan to-synth-magenta text-synth-dark px-6 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity shadow-lg">
+                    <i class="fas fa-paper-plane mr-2"></i>Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="bg-synth-darker border-b border-synth-cyan/20 sticky top-0 z-50">
+    <nav class="bg-synth-darker border-b border-synth-cyan/20 sticky top-12 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
@@ -127,7 +138,6 @@
                         <a href="blog.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Blog</a>
                         <a href="certifications.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
                         <a href="cmomimico.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">CMO MiMi Co</a>
-                        <a href="contact.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                         <a href="digital-nomad.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Digital Nomad</a>
                         <a href="fractional-cmo.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">Fractional CMO</a>
                         <a href="github.html" class="text-gray-300 hover:text-synth-cyan px-3 py-2 rounded-md text-sm font-medium transition-colors">GitHub</a>
@@ -163,7 +173,6 @@
                 <a href="blog.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Blog</a>
                 <a href="certifications.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Certifications</a>
                 <a href="cmomimico.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">CMO MiMi Co</a>
-                <a href="contact.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 <a href="digital-nomad.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Digital Nomad</a>
                 <a href="fractional-cmo.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">Fractional CMO</a>
                 <a href="github.html" class="text-gray-300 hover:text-synth-cyan block px-3 py-2 rounded-md text-base font-medium">GitHub</a>
@@ -184,7 +193,7 @@
     </nav>
 
     <!-- Breadcrumbs -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 mt-2">
         <nav class="flex" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-3">
                 <li class="inline-flex items-center">
@@ -227,6 +236,46 @@
             <div class="absolute top-20 left-10 w-2 h-2 bg-synth-cyan rounded-full animate-pulse"></div>
             <div class="absolute top-40 right-20 w-1 h-1 bg-synth-magenta rounded-full animate-pulse delay-1000"></div>
             <div class="absolute bottom-40 left-20 w-1.5 h-1.5 bg-synth-cyan rounded-full animate-pulse delay-2000"></div>
+        </div>
+    </section>
+
+    <!-- Search Widget Section -->
+    <section class="py-16 bg-synth-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-synth-cyan to-synth-magenta bg-clip-text text-transparent">
+                    Ask Me Anything about the client 
+                </span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Ask questions about our client, SEO, or any services. Get AI-generated answers based on our knowledge base.
+            </p>
+            <div class="max-w-2xl mx-auto">
+                <div class="flex">
+                    <input 
+                        placeholder="Ask a question..." 
+                        id="searchInput"
+                        class="flex-1 px-6 py-4 bg-synth-dark border border-synth-cyan/20 rounded-l-lg text-white placeholder-gray-400 focus:outline-none focus:border-synth-cyan text-lg"
+                    />
+                    <button 
+                        id="searchButton"
+                        class="bg-gradient-to-r from-synth-cyan to-synth-magenta text-synth-dark px-6 py-4 rounded-r-lg font-semibold hover:opacity-90 transition-opacity"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="searchResults" class="mt-6 text-left hidden">
+                    <div class="bg-synth-dark border border-synth-cyan/20 rounded-lg p-6">
+                        <div id="resultsContent"></div>
+                    </div>
+                </div>
+                <div id="searchLoading" class="mt-6 hidden">
+                    <div class="flex items-center justify-center text-synth-cyan">
+                        <i class="fas fa-spinner fa-spin mr-2"></i>
+                        <span>Generating answer...</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -371,6 +420,154 @@
         
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const searchResults = document.getElementById('searchResults');
+        const resultsContent = document.getElementById('resultsContent');
+        const searchLoading = document.getElementById('searchLoading');
+
+        // Function to perform search
+        async function performSearch(query) {
+            try {
+                searchLoading.classList.remove('hidden');
+                searchResults.classList.add('hidden');
+
+                const requestBody = {
+                    query: {
+                        text: query,
+                        queryId: ""
+                    },
+                    session: "1",
+                    relatedQuestionsSpec: {
+                        enable: true
+                    },
+                    answerGenerationSpec: {
+                        ignoreAdversarialQuery: true,
+                        ignoreNonAnswerSeekingQuery: false,
+                        ignoreLowRelevantContent: true,
+                        multimodalSpec: {},
+                        includeCitations: true,
+                        modelSpec: {
+                            modelVersion: "stable"
+                        }
+                    }
+                };
+
+                // Note: This is a client-side implementation
+                // In a real production environment, you would need to:
+                // 1. Set up a backend service to handle the API call
+                // 2. Store and manage the access token securely
+                // 3. Handle CORS and authentication properly
+
+                // For demonstration purposes, we'll show the structure
+                console.log('Answer generation request:', requestBody);
+                
+                // Simulate API call (replace with actual implementation)
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Display mock generated answer for demonstration
+                displayGeneratedAnswer({
+                    answer: `Based on the available information, here's what I can tell you about "${query}": This is a generated answer that would come from the Discovery Engine's answer generation API. The system analyzes your question and provides a comprehensive response based on the indexed content.`,
+                    citations: [
+                        {
+                            title: "Sample Source 1",
+                            url: "#"
+                        },
+                        {
+                            title: "Sample Source 2", 
+                            url: "#"
+                        }
+                    ],
+                    relatedQuestions: [
+                        "What are the benefits of this approach?",
+                        "How does this compare to other methods?",
+                        "What are the implementation steps?"
+                    ]
+                });
+
+            } catch (error) {
+                console.error('Answer generation error:', error);
+                displayError('An error occurred while generating the answer. Please try again.');
+            } finally {
+                searchLoading.classList.add('hidden');
+            }
+        }
+
+        // Function to display generated answer
+        function displayGeneratedAnswer(data) {
+            let html = `
+                <div class="mb-6">
+                    <h3 class="text-synth-cyan font-semibold mb-4 text-lg">Generated Answer</h3>
+                    <div class="bg-synth-darker p-4 rounded-lg border border-synth-cyan/20 mb-4">
+                        <p class="text-gray-300 leading-relaxed">${data.answer}</p>
+                    </div>
+                </div>
+            `;
+
+            // Add citations if available
+            if (data.citations && data.citations.length > 0) {
+                html += `
+                    <div class="mb-6">
+                        <h4 class="text-synth-magenta font-semibold mb-3">Sources</h4>
+                        <div class="space-y-2">
+                            ${data.citations.map(citation => `
+                                <div class="flex items-center">
+                                    <i class="fas fa-link text-synth-cyan mr-2"></i>
+                                    <a href="${citation.url}" class="text-synth-cyan hover:text-synth-magenta transition-colors text-sm">
+                                        ${citation.title}
+                                    </a>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Add related questions if available
+            if (data.relatedQuestions && data.relatedQuestions.length > 0) {
+                html += `
+                    <div class="mb-4">
+                        <h4 class="text-synth-magenta font-semibold mb-3">Related Questions</h4>
+                        <div class="space-y-2">
+                            ${data.relatedQuestions.map(question => `
+                                <div class="flex items-center cursor-pointer text-gray-300 hover:text-synth-cyan transition-colors text-sm" onclick="searchInput.value = '${question}'; performSearch('${question}');">
+                                    <i class="fas fa-question-circle text-synth-cyan mr-2"></i>
+                                    ${question}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            resultsContent.innerHTML = html;
+            searchResults.classList.remove('hidden');
+        }
+
+        // Function to display error
+        function displayError(message) {
+            resultsContent.innerHTML = `<p class="text-red-400">${message}</p>`;
+            searchResults.classList.remove('hidden');
+        }
+
+        // Event listeners
+        searchButton.addEventListener('click', () => {
+            const query = searchInput.value.trim();
+            if (query) {
+                performSearch(query);
+            }
+        });
+
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.trim();
+                if (query) {
+                    performSearch(query);
+                }
+            }
         });
     </script>
 </body>
